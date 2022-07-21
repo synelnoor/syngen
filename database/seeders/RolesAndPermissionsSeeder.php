@@ -18,9 +18,9 @@ class RolesAndPermissionsSeeder extends Seeder
     public function run()
     {
       $user = User::create([
-        'name' => 'Admin',
-        'email' => 'admin@app.com',
-        'password' => 'password'
+        'name' => 'Adminos',
+        'email' => 'adminos@app.com',
+        'password' => bcrypt('password')
       ]);
 
       $role = Role::create(['name' => 'admin']);
